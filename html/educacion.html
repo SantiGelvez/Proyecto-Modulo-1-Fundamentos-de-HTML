@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width,user-scalable=no">
     <title>CV Santiago Gelvez - Educación</title>
   </head>
-  <body>
 
-    <header>
+  <body>
+    <header id="inicio">
       <svg style="border: 1px solid grey;" width="227px" height="138px" viewbox="0 0 227 138">
         <image xlink:href="../img/logo.svg" width="226px" height="138px" x="0px" y="0px">Imagen no disponible</image>
       </svg>
-      <h1 id="inicio">Hoja de Vida</h1><br/>
+      <h1>Curriculum Vitae</h1>
       <h2>Santiago Andres Gelvez Camargo</h2>
-      <h3>04 de Ocubre, 1994</h3>
-      <h4>Bogota D.C. - Colombia</h4>
+      <h3>04 de Ocubre, 1994<br/>Bogota D.C. - Colombia</h3>
     </header>
 
     <nav>
+      <h2 id="menu-navegacion">Menú General</h2>
       <ul>
         <li><a href="../index.html">Información Personal</a></li>
         <li><a href="#inicio">Educación</a></li>
@@ -25,16 +25,78 @@
       </ul>
     </nav>
 
-    <section>
+    <section id="educacion">
       <h2>Educación</h2>
-    </section>
+
+      <table border="1" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Año</th>
+            <th>Institución</th>
+            <th>Lugar</th>
+            <th>¿Culminó?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2018</td>
+            <td>Universidad Pedagógica y Tecnológica de Colombia</td>
+            <td>Sogamoso, Boyacá</td>
+            <td>Si</td>
+          </tr>
+          <tr>
+            <td>2011</td>
+            <td>Institución Educativa Jorge Clemente Palacios</td>
+            <td>Tibasosa, Boyacá</td>
+            <td>Si</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form>
+        <fieldset>
+          <legend><h1>Agregar Estudios</h1></legend>
+
+          <label for="anio"><strong>Año: </strong></label>
+          <select id="anio">
+            <option>2019</option><option>2018</option><option>2017</option><option>2016</option>
+            <option>2015</option><option>2014</option><option>2013</option><option>2012</option>
+            <option>2011</option><option>2010</option><option>2009</option><option>2008</option>
+            <option>2007</option><option>2006</option><option>2005</option><option>2004</option>
+            <option>2003</option><option>2002</option><option>2001</option><option>2000</option>
+            <option>1999</option><option>1998</option><option>1997</option><option>1996</option>
+            <option>1995</option><option>1994</option><option>1993</option><option>1992</option>
+            <option>1991</option><option>1990</option><option>1989</option><option>1988</option>
+            <option>1987</option><option>1986</option><option>1985</option><option>1984</option>
+            <option>1983</option><option>1982</option><option>1981</option><option>1980</option>
+          </select><br/>
+
+          <label for="institucion"><strong>Institución: </strong></label>
+          <input type="text" required><br/>
+
+          <label for="lugar"><strong>Lugar: </strong></label>
+          <textarea name="lugar" id="lugar" rows="2" cols="50" required></textarea><br>
+
+          <label for="culmino"><strong>¿Culminó?: </strong></label>
+          <input type="radio" name="culmino" value="si" id="culmino">SI
+          <input type="radio" name="culmino" value="no" id="culmino">NO<br/>
+
+          <br/><input type="reset">
+          <input type="submit" value="Agregar">
+
+        </fieldset>
+      </form><br/>
+      <a href="#menu-navegacion">Volver al menú</a>
+    </section><br/>
 
     <footer>
-      <a href="mailto:santiagogelvez29@gmail.com?subject=CV-NEXTU">Correo electronico</a> |
-      3007634946 |
-      <a href="https://www.facebook.com/santiagoandres.gelvez" target="_blank">Facebook</a> |
-      <a href="https://twitter.com/SantiagoGelvez" target="_blank">Twitter</a> |
-      <a href="https://github.com/SantiGelvez" target="_blank">GitHub</a>
+      <a href="https://www.facebook.com/santiagoandres.gelvez" target="_blank"><img src="../img/facebook.png" width="20px"></a> |
+      <a href="https://twitter.com/SantiagoGelvez" target="_blank"><img src="../img/twitter.png" width="20px"></a> |
+      <a href="https://github.com/SantiGelvez" target="_blank"><img src="../img/github.png" width="20px"></a> |
+      <a href="mailto:santiagogelvez29@gmail.com?subject=CV-NEXTU">santiagogelvez29@gmail.com</a><br/>
+      3007634946<br/>
+      Av. Calle 63 No. 74A - 11, Bogota D.C.<br/>
+      Colombia
     </footer>
 
   </body>
